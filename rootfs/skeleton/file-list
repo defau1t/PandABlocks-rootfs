@@ -19,5 +19,10 @@ f 644 /usr/lib/python3.8/site-packages/defaults.pth defaults.pth
 rm - /etc/profile
 f 555 /etc/profile
 
+# Copy in nsswitch.conf file that conforms with vendor and glibc
+# defaults
+rm - /etc/nsswitch.conf
+f 644 /etc/nsswitch.conf
+
 # link firmware folder
 l 777 /lib/firmware /opt/firmware
